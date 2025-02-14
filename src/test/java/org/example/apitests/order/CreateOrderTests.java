@@ -71,10 +71,9 @@ public class CreateOrderTests extends OrdersAPIHandler {
         Allure.parameter("Цвет самоката", scooterColor);
 
         Response response = createOrder(firstName, lastName, address, phone, rentTime, deliveryDate, comment, scooterColor);
+        this.trackId = getTrack(response);
         checkStatusCode(response, 201);
         checkResponseParamNotNull(response, "track");
-
-        this.trackId = getTrack(response);
     }
 
 }
