@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.example.apitests.courier.CreateCourierTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.991 s <<< FAILURE! - in org.example.apitests.courier.CreateCourierTests
+createSameCouriersIsFailed(org.example.apitests.courier.CreateCourierTests)  Time elapsed: 0.416 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Ётот логин уже используетс€
+  Actual: Ётот логин уже используетс€. ѕопробуйте другой.
+
+	at org.example.apitests.courier.CreateCourierTests.createSameCouriersIsFailed(CreateCourierTests.java:74)
+
